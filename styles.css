@@ -229,7 +229,7 @@ h5,h6,.subheading{font-weight:400;letter-spacing:-.01em}
 /* ==== HOME HERO ==== */
 .hero-grid{display:grid;gap:32px;align-items:center}
 @media(min-width:1024px){.hero-grid{grid-template-columns:7fr 5fr;gap:16px}}
-.hero-h1{font-size:clamp(1.8rem,9vw,2.8rem);line-height:1.05;letter-spacing:-.02em;color:#fff}
+.hero-h1{font-size:clamp(2.25rem,5.5vw,4.25rem);line-height:1.02;letter-spacing:-.02em;color:#fff}
 .hero-sub{margin-top:24px;font-size:17px;color:rgba(232,235,245,.78);max-width:32rem;line-height:1.6}
 .hero-art{position:relative;width:min(420px,80vw);aspect-ratio:1;margin-left:auto}
 .hero-art-glow{position:absolute;inset:0;border-radius:50%;filter:blur(60px);
@@ -814,33 +814,5 @@ html{scroll-padding-top:96px}
     bottom: 16px;
     padding: 10px 16px;
     font-size: 13px;
-  }
-}
-
-@media (max-width:768px){
-
-  .page-hero .hero-grid{
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    text-align:center !important;
-  }
-
-  .page-hero .order-mob-2{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .page-hero .hero-h1{
-    width:100%;
-    max-width:100%;
-    margin:0 auto;
-    text-align:center;
-  }
-
-  .page-hero .eyebrow{
-    justify-content:center;
   }
 }
