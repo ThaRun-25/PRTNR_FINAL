@@ -816,3 +816,19 @@ html{scroll-padding-top:96px}
     font-size: 13px;
   }
 }
+@media (max-width: 480px){
+
+  .hero-h1{
+    font-size: clamp(2.6rem, 8vw, 3.2rem) !important;
+    line-height: 0.95;
+    text-align: center;
+  }
+
+}
+@media (max-width: 480px){
+
+  .order-mob-2{
+    text-align: center;
+  }
+
+}
