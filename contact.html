@@ -24,36 +24,18 @@
 <div class="nav-wrap">
   <div class="nav">
 
-    <a class="brand" href="index.html"><img src="assets/PRTNR Logo without BG.png" width="30"></img><span class="brand-name">PRTNR</span></a>
+    <a class="brand" href="index.html"><img src="assets/PRTNR Logo without BG.png" width="30" alt="PRTNR Logo"><span class="brand-name">PRTNR</span></a>
     
 
     <nav class="nav-links">
-      <a class="nav-link" href="index.html">HOME</a>
+      <a class="nav-link active" href="index.html">HOME</a>
       <a class="nav-link" href="about.html">COLLECTIVE</a>
       <a class="nav-link" href="engagement.html">ENGAGEMENT MODELS</a>
-      <a class="nav-link" href="offerings.html">OFFERINGS</a>
-      <a class="nav-link active" href="contact.html">CONTACT US</a></nav>
-    </nav>
-
+      <a class="nav-link" href="offerings.html">OFFERINGS</a></nav>
     <a class="nav-cta" href="contact.html">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" stroke-width="2"
-      stroke-linecap="round" stroke-linejoin="round">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2
-        19.79 19.79 0 0 1-8.63-3.07
-        19.5 19.5 0 0 1-6-6
-        19.79 19.79 0 0 1-3.07-8.67
-        A2 2 0 0 1 4.11 2h3
-        a2 2 0 0 1 2 1.72
-        c.13.96.37 1.9.72 2.81
-        a2 2 0 0 1-.45 2.11
-        L8.09 9.91a16 16 0 0 0 6 6
-        l1.27-1.27a2 2 0 0 1 2.11-.45
-        c.91.35 1.85.59 2.81.72
-        A2 2 0 0 1 22 16.92z"/>
-      </svg>
-      BOOK A CALL
-    </a>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
+      </svg> CONTACT US</a>
 
     <button class="menu-btn" id="menuBtn" aria-label="menu">
       <svg width="20" height="20" viewBox="0 0 24 24"
@@ -98,15 +80,11 @@
         <span class="eyebrow">↘ Contact</span>
 
         <h1 class="display mt-5 h2-lg text-ink max-w-3xl">
-          Let's build your<br/>
-          <span class="text-electric">
-            operational foundation.
-          </span>
-        </h1>
+          Let's Align Your <br/><span class="text-electric">Operations</span> with <span class="text-electric">Your Ambition.</span></h1>
 
         <p class="hero-sub max-w-xl">
-          Tell us about your situation and we'll respond within 24–48 hours.
-          No obligation.
+          Our collective works with a limited number of high-growth firms to ensure deep-level strategic integration. 
+          If your organization is prepared for the next stage of structural evolution, we invite you to begin the conversation.
         </p>
 
       </div>
@@ -131,7 +109,7 @@
   </div>
 </section>
 
-<section class="reveal cream contact-section">
+<section class="contact-section">
 
   <div id="cont" class="container">
 
@@ -166,136 +144,174 @@
       </aside>
     <div>
 
-        <!-- WORKING FORM -->
+<form class="contact-form"
+      id="enq"
+      action="https://api.web3forms.com/submit"
+      method="POST">
 
-        <form class="contact-form"
-              id="enq"
-              action="https://api.web3forms.com/submit"
-              method="POST">
+  <!-- WEB3FORMS ACCESS KEY -->
+  <input type="hidden"
+         name="access_key"
+         value="3eea000e-b042-480b-9936-947306996918">
 
-          <!-- WEB3FORMS ACCESS KEY -->
+  <input type="hidden"
+         name="subject"
+         value="New PTNR Advisory Enquiry">
 
-          <input type="hidden"
-                 name="access_key"
-                 value="3eea000e-b042-480b-9936-947306996918">
+  <input type="hidden"
+         name="from_name"
+         value="PTNR Website">
 
-          <!-- OPTIONAL -->
+  <h3 class="display text-ink mb-7"
+      style="font-size:24px">
+    Tell us about your project
+  </h3>
 
-          <input type="hidden"
-                 name="subject"
-                 value="New PTNR Advisory Enquiry">
+  <div class="form-grid">
 
-          <input type="hidden"
-                 name="from_name"
-                 value="PTNR Website">
+    <!-- FULL NAME -->
+    <div class="field">
+      <label>FULL NAME *</label>
+      <input required
+             type="text"
+             name="full_name"
+             placeholder="Your full name">
+    </div>
 
-          <h3 class="display text-ink mb-7"
-          style="font-size:24px">
-            Tell us about your project
-          </h3>
+    <!-- TITLE / DESIGNATION -->
+    <div class="field">
+      <label>TITLE / DESIGNATION *</label>
+      <input required
+             type="text"
+             name="designation"
+             placeholder="Founder, CEO, HR Head, etc.">
+    </div>
 
-          <div class="form-grid">
+    <!-- WORK EMAIL -->
+    <div class="field">
+      <label>WORK EMAIL ID *</label>
+      <input required
+             type="email"
+             name="email"
+             placeholder="you@company.com">
+    </div>
 
-            <div class="field">
-              <label>FULL NAME *</label>
+    <!-- COMPANY NAME -->
+    <div class="field">
+      <label>COMPANY NAME *</label>
+      <input required
+             type="text"
+             name="company_name"
+             placeholder="Your company name">
+    </div>
 
-              <input required
-                     type="text"
-                     name="name"
-                     placeholder="Your name"/>
-            </div>
+    <!-- COMPANY WEBSITE -->
+    <div class="field">
+      <label>COMPANY WEBSITE *</label>
+      <input required
+             type="url"
+             name="company_website"
+             placeholder="https://www.company.com">
+    </div>
 
-            <div class="field">
-              <label>EMAIL ADDRESS *</label>
+    <!-- EMPLOYEE COUNT -->
+    <div class="field">
+      <label>CURRENT EMPLOYEE COUNT *</label>
+      <select required name="employee_count">
+        <option value="">Select range</option>
+        <option>1–10</option>
+        <option>11–25</option>
+        <option>26–50</option>
+        <option>51–100</option>
+        <option>101–250</option>
+        <option>251–500</option>
+        <option>500+</option>
+      </select>
+    </div>
 
-              <input required
-                     type="email"
-                     name="email"
-                     placeholder="you@company.com"/>
-            </div>
+    <!-- SERVICES NEEDED -->
+    <div class="field" style="grid-column:1/-1;">
+      <label>SERVICES NEEDED *</label>
+      <select required
+              name="service_needed"
+              id="serviceNeeded">
+        <option value="">Select a service</option>
+        <option>HR Advisory & People Systems</option>
+        <option>Operations, Infrastructure, Mobility & Compliance</option>
+        <option>Learning & Capability Building</option>
+        <option>CSR, Inclusion & Social Impact</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
 
-            <div class="field">
-              <label>COMPANY NAME *</label>
+    <!-- OTHER SERVICE FIELD -->
+    <div class="field"
+         id="otherServiceField"
+         style="display:none;grid-column:1/-1;">
+      <label>PLEASE SPECIFY *</label>
+      <input type="text"
+             name="other_service"
+             id="otherServiceInput"
+             placeholder="Describe the service required">
+    </div>
 
-              <input required
-                     type="text"
-                     name="company"
-                     placeholder="Your company"/>
-            </div>
+  </div>
 
-            <div class="field">
-              <label>CURRENT TEAM SIZE *</label>
+  <!-- REQUIREMENT -->
+  <div class="field mt-5">
+    <label>BRIEF REQUIREMENT / OVERVIEW *</label>
+    <textarea required
+              rows="6"
+              name="requirement"
+              placeholder="Tell us about your current situation, challenges, goals, and the support you're looking for..."></textarea>
+  </div>
 
-              <select name="size">
-                <option>Select range</option>
-                <option>1–10</option>
-                <option>11–50</option>
-                <option>51–200</option>
-                <option>201–500</option>
-                <option>500+</option>
-              </select>
-            </div>
+  <button type="submit"
+          class="btn btn-electric mt-8">
 
-          </div>
+    Submit Enquiry
 
-          <div class="field mt-5">
+    <svg width="14"
+         height="14"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"/>
+      <polyline points="7 7 17 7 17 17"/>
+    </svg>
 
-            <label>TELL US ABOUT YOUR REQUIREMENT *</label>
+  </button>
 
-            <textarea required
-                      rows="5"
-                      name="requirement"
-                      placeholder="Describe your current challenges and what you're hoping to achieve…"></textarea>
+  <p class="mt-5 text-ink-soft"
+     style="font-size:12px">
+   Once received, our team will review your operational requirements to determine if we are the right partners 
+   to facilitate your next phase of growth.
+  </p>
 
-          </div>
+</form>
 
-          <div class="field mt-5">
+<script>
+const serviceSelect = document.getElementById('serviceNeeded');
 
-            <label>BUDGET RANGE (OPTIONAL)</label>
+if (serviceSelect) {
+  const otherField = document.getElementById('otherServiceField');
+  const otherInput = document.getElementById('otherServiceInput');
 
-            <select name="budget">
-              <option>Select a range</option>
-              <option>Under ₹10k</option>
-              <option>₹10k–₹25k</option>
-              <option>₹25k–₹50k</option>
-              <option>₹50k–₹100k</option>
-              <option>₹100k+</option>
-            </select>
-
-          </div>
-
-          <button type="submit"
-                  class="btn btn-electric mt-8">
-
-            Submit Enquiry
-
-            <svg width="14" height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round">
-
-              <line x1="7" y1="17" x2="17" y2="7"/>
-              <polyline points="7 7 17 7 17 17"/>
-
-            </svg>
-
-          </button>
-
-          <p class="mt-5 text-ink-soft"
-          style="font-size:12px">
-
-            We'll respond within 24–48 hours.
-            Your information is kept strictly confidential.
-
-          </p>
-
-        </form>
-
-      </div>
-
+  serviceSelect.addEventListener('change', function () {
+    if (this.value === 'Other') {
+      otherField.style.display = 'block';
+      otherInput.required = true;
+    } else {
+      otherField.style.display = 'none';
+      otherInput.required = false;
+      otherInput.value = '';
+    }
+  });
+}
+</script>
     </div>
 
   </div>

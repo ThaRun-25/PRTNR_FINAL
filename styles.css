@@ -45,6 +45,9 @@ h5,h6,.subheading{font-weight:400;letter-spacing:-.01em}
 .container{max-width:1320px;margin:0 auto;padding:0 24px}
 .section{padding:64px 32px}
 @media(min-width:768px){.section{padding:96px 56px}}
+.partners-section{
+  padding-top:12px;
+}
 
 /* ==== NAV ==== */
 .nav-wrap{position:fixed;top:16px;left:0;right:0;z-index:50;padding:0 16px}
@@ -122,7 +125,7 @@ h5,h6,.subheading{font-weight:400;letter-spacing:-.01em}
 
 @media (max-width:768px){
   .page-hero{
-    padding: 120px 32px 140px;
+    padding: 80px 56px 80px;
   }
 }
 @media(min-width:768px){.page-hero{padding:160px 56px 112px}}
@@ -160,11 +163,23 @@ h5,h6,.subheading{font-weight:400;letter-spacing:-.01em}
 
 /* ==== EYEBROW ==== */
 .eyebrow{
-  font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.22em;
-  text-transform:uppercase;font-weight:500;color:#7a7f95;
-  display:inline-flex;align-items:center;gap:10px;
+  font-family:"Inter",sans-serif;
+  font-size:15px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:600;
+  color:#7a7f95;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
 }
-.eyebrow::before{content:"";width:24px;height:1px;background:currentColor;opacity:.6}
+.eyebrow::before{
+  content:"";
+  width:40px;
+  height:1px;
+  background:currentColor;
+  opacity:.6;
+}
 
 /* ==== BUTTONS ==== */
 .btn{
