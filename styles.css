@@ -832,3 +832,57 @@ html{scroll-padding-top:96px}
   }
 
 }
+
+/* ===== IMPACT METRICS ===== */
+
+.stats-cards{
+  display:grid;
+  gap:20px;
+  grid-template-columns:1fr;
+}
+
+@media(min-width:768px){
+  .stats-cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(min-width:1200px){
+  .stats-cards{
+    grid-template-columns:repeat(5,1fr);
+  }
+}
+
+.stat-card{
+  background:var(--panel);
+  color:#fff;
+  border-radius:24px;
+  padding:36px 24px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.06);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+
+.stat-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--electric);
+  box-shadow:0 20px 50px -20px rgba(183,149,11,.35);
+}
+
+.stat-number{
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  font-weight:700;
+  line-height:1;
+  color:var(--electric-glow);
+  margin-bottom:16px;
+}
+
+.stat-label{
+  font-size:1rem;
+  line-height:1.5;
+  color:rgba(255,255,255,.85);
+}
