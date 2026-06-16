@@ -945,3 +945,51 @@ html{scroll-padding-top:96px}
   line-height:1.5;
   color:rgba(255,255,255,.85);
 }
+
+/* ===== LOGO STRIP ===== */
+
+.logo-strip{
+  text-align:center;
+}
+
+.logo-grid{
+  margin-top:48px;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:32px;
+  align-items:center;
+}
+
+.logo-grid img{
+  max-width:140px;
+  max-height:50px;
+  width:auto;
+  height:auto;
+
+  margin:0 auto;
+
+  filter: grayscale(100%);
+  opacity:.75;
+
+  transition:all .3s ease;
+}
+
+.logo-grid img:hover{
+  filter:grayscale(0%);
+  opacity:1;
+  transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+  .logo-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+
+  .logo-grid img{
+    max-width:110px;
+  }
+
+}
