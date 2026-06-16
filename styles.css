@@ -966,19 +966,8 @@ html{scroll-padding-top:96px}
   max-height:50px;
   width:auto;
   height:auto;
-
   margin:0 auto;
-
-  filter: grayscale(100%);
-  opacity:.75;
-
-  transition:all .3s ease;
-}
-
-.logo-grid img:hover{
-  filter:grayscale(0%);
-  opacity:1;
-  transform:translateY(-2px);
+  opacity:.85;
 }
 
 @media(max-width:768px){
