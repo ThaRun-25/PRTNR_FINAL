@@ -150,9 +150,10 @@ h5,h6,.subheading{font-weight:400;letter-spacing:-.01em}
 
 @media (max-width:768px){
   .page-hero{
-    padding: 80px 56px 80px;
+    padding: 80px 20px 80px;
   }
 }
+
 @media(min-width:768px){.page-hero{padding:160px 56px 112px}}
 .page-hero::after{
   content:"";
@@ -575,11 +576,17 @@ html{scroll-padding-top:96px}
   }
 
   .page-hero .hero-h1{
-    text-align:center;
-    margin:0 auto;
     width:100%;
-    max-width:320px;
+    max-width:none;
+    margin:0 auto;
+    text-align:center;
+    line-height:1;
   }
+
+.page-hero .hero-h1 .text-electric{
+  display:block;
+  text-align:center;
+}
 
   .page-hero .hero-sub{
     text-align:center;
