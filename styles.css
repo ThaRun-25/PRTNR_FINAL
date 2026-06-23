@@ -966,6 +966,13 @@ html{scroll-padding-top:96px}
   margin-bottom:16px;
 }
 
+.stat-unit{
+  font-size: 0.45em;   
+  font-weight: inherit;
+  vertical-align: baseline;
+  margin-left: 2px;
+}
+
 .stat-label{
   font-size:1rem;
   line-height:1.5;
